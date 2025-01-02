@@ -169,6 +169,11 @@ footer ul li {
   margin: 0 10px;
 }
 
+nav ul li a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #4a90e2;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   nav ul {
