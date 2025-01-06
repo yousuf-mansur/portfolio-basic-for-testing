@@ -5,103 +5,248 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Md. Yousuf Mansur">
-  <meta name="description"
-    content="Portfolio of Md. Yousuf Mansur - Full-Stack Developer specializing in web application development with ASP.NET Core, Angular, React, and more.">
-  <meta name="keywords"
-    content="Md. Yousuf Mansur, Portfolio, Full-Stack Developer, Web Development, ASP.NET Core, Angular, React, Entity Framework">
+  <meta name="description" content="Portfolio of Md. Yousuf Mansur - Full-Stack Developer.">
+  <meta name="keywords" content="Full-Stack Developer, Web Development, ASP.NET Core, Angular, React">
   <meta name="robots" content="index, follow">
   <title>Md. Yousuf Mansur | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <!-- Skip to Content for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to Content</a>
+
   <!-- Header Section -->
   <header>
     <nav>
       <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" aria-label="About Me">About Me</a></li>
+        <li><a href="#projects" aria-label="Projects">Projects</a></li>
+        <li><a href="#skills" aria-label="Skills">Skills</a></li>
+        <li><a href="#contact" aria-label="Contact">Contact</a></li>
       </ul>
     </nav>
     <h1>Md. Yousuf Mansur</h1>
     <p>Full-Stack Developer | Web Application Specialist</p>
   </header>
 
-  <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="images/profile.jpg" alt="Md. Yousuf Mansur" style="width:150px; border-radius:50%;">
-    <p>Hello! I'm Md. Yousuf Mansur, a passionate Full-Stack Developer with expertise in ASP.NET Core, Angular, React,
-      and modern web technologies. I build scalable and efficient web applications that solve real-world problems.</p>
-    <a href="resume.pdf" download>Download Resume</a>
-  </section>
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- About Me Section -->
+    <section id="about">
+      <div class="about-container">
+        <img src="images/profile.jpg" alt="Portrait of Md. Yousuf Mansur" loading="lazy" class="profile-img">
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>
+            Hello! I'm <strong>Md. Yousuf Mansur</strong>, a passionate Software Developer with strong skills in C#,
+            ASP.NET
+            Core, MVC, Web API, .NET MAUI, Angular, and React. I enjoy building efficient, scalable, and user-friendly
+            web
+            applications that solve real-world problems.
+          </p>
+          <p><strong>I am skilled in:</strong></p>
+          <ul>
+            <li><strong>Backend Development:</strong> ASP.NET Core, Web API, ADO.NET, Entity Framework</li>
+            <li><strong>Frontend Technologies:</strong> Angular, React, JavaScript, Bootstrap, Tailwind CSS</li>
+            <li><strong>Database Management:</strong> MS SQL Server, MongoDB</li>
+            <li><strong>Tools:</strong> Visual Studio, VS Code, SQL Server Management Studio</li>
+          </ul>
+          <p>
+            As a quick learner, I’ve developed a strong problem-solving mindset and successfully tackled coding
+            challenges
+            on <strong>LeetCode</strong> to enhance my logical thinking and algorithmic skills.
+          </p>
+          <a href="resume.pdf" download class="btn">Download Resume</a>
+        </div>
+      </div>
+    </section>
 
 
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <img src="images/project1.jpg" alt="Screenshot of Artist Portfolio Project" loading="lazy"
+            class="project-img">
+          <h3>
+            <a href="https://github.com/yousuf-mansur/artist-portfolio-core-mvc-crud" target="_blank"
+              rel="noopener noreferrer">
+              Artist Portfolio Core MVC CRUD
+            </a>
+          </h3>
+          <p>A master-details CRUD application built using ASP.NET Core MVC.</p>
+        </article>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <article>
-      <h3><a href="https://github.com/yousuf-mansur/artist-portfolio-core-mvc-crud" target="_blank">Artist Portfolio
-          Core MVC CRUD</a></h3>
-      <img src="images/project1.jpg" alt="Screenshot of Artist Portfolio Project" style="width:100%; max-width:400px;">
-      <p>A master-details CRUD application built using ASP.NET Core MVC.</p>
-    </article>
-    <article>
-      <h3><a href="https://github.com/yousuf-mansur/aritst-profile-sqlLite-crud" target="_blank">Artist Profile SQLite
-          CRUD</a></h3>
-      <img src="images/project2.jpg" alt="Screenshot of Artist Profile Project" style="width:100%; max-width:400px;">
-      <p>A .NET MAUI application for managing artist profiles, with SQLite integration.</p>
-    </article>
-  </section>
+        <!-- Project 2 -->
+        <article class="project-card">
+          <img src="images/project2.jpg" alt="Screenshot of Artist Profile Project" loading="lazy" class="project-img">
+          <h3>
+            <a href="https://github.com/yousuf-mansur/aritst-profile-sqlLite-crud" target="_blank"
+              rel="noopener noreferrer">
+              Artist Profile SQLite CRUD
+            </a>
+          </h3>
+          <p>A .NET MAUI application for managing artist profiles with SQLite integration.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Educational Qualification Section -->
+    <section id="education">
+      <div class="education-container">
+        <h2>Educational Qualification</h2>
+
+        <div class="qualification">
+          <h3>Diploma in Cross-Platform Application Development with ASP.NET, Angular & React</h3>
+          <p><strong>Islamic Development Bank, Bangladesh Islamic Solidarity Educational Wakf</strong></p>
+          <p><strong>Star Computer Systems Limited, Bangladesh</strong></p>
+          <p>Specialized in ASP.NET Core, Angular, React, and web development (788 hours).</p>
+          <a href="https://www.stargroup-bd.com/" target="_blank" rel="noopener noreferrer" class="btn">Visit
+            Institution
+            Website</a>
+          <a href="certificates/diploma-certificate.pdf" download class="btn">Download Certificate</a>
+        </div>
+
+        <div class="qualification">
+          <h3>Master of Arts in Drama (Scriptwriting)</h3>
+          <p><strong>Rabindra Bharati University, India</strong> (90% Marks)</p>
+          <p>Graduated with a specialization in Scriptwriting, funded by the Indian Council for Cultural Relations
+            Scholarship Scheme.</p>
+          <a href="https://www.rbu.ac.in/" target="_blank" rel="noopener noreferrer" class="btn">Visit Institution
+            Website</a>
+          <a href="certificates/masters-certificate.pdf" download class="btn">Download Certificate</a>
+        </div>
+
+        <div class="qualification">
+          <h3>Post Graduate Diploma in Social Work</h3>
+          <p><strong>Rabindra Bharati University, India</strong></p>
+          <p>Focus on social work methodologies and their applications in society.</p>
+          <a href="https://www.rbu.ac.in/" target="_blank" rel="noopener noreferrer" class="btn">Visit Institution
+            Website</a>
+          <a href="certificates/pgd-certificate.pdf" download class="btn">Download Certificate</a>
+        </div>
+
+        <div class="qualification">
+          <h3>Bachelor of Arts in Theatre and Performance Studies</h3>
+          <p><strong>University of Dhaka, Bangladesh</strong></p>
+          <p>Courses included Theatre Event Management, Design, Managing Stage, Production Design, and Production
+            Management.</p>
+          <a href="https://www.jkkniu.edu.bd/" target="_blank" rel="noopener noreferrer" class="btn">Visit Institution
+            Website</a>
+          <a href="certificates/bachelor-certificate.pdf" download class="btn">Download Certificate</a>
+        </div>
+
+        <div class="qualification">
+          <h3>IELTS</h3>
+          <p><strong>British Council</strong></p>
+          <p><strong>Band Score 6.5</strong> with no band below 6 <strong>Listening 7</strong><strong>Reading 6</strong>
+            <strong>Wrtiting 6</strong> <strong>Speaking 6.5</strong>
+          </p>
+          <a href="https://www.britishcouncil.org.bd/" target="_blank" rel="noopener noreferrer" class="btn">Visit
+            Institution
+            Website</a>
+          <a href="certificates/ielts-trf.pdf" download class="btn">Download Certificate</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="skills-container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+
+          <!-- Technology Cards -->
+          <div class="skill-card">
+            <img src="images/csharp.png" alt="C#" class="skill-icon">
+            <p>C#</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/aspnetcore.png" alt="ASP.NET Core" class="skill-icon">
+            <p>ASP.NET Core</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/aspnetmvc.png" alt="ASP.NET MVC" class="skill-icon">
+            <p>ASP.NET MVC</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/webapi.png" alt="Web API" class="skill-icon">
+            <p>Web API</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/angular.png" alt="Angular" class="skill-icon">
+            <p>Angular</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/react.png" alt="React" class="skill-icon">
+            <p>React</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/sqlserver.png" alt="SQL Server" class="skill-icon">
+            <p>SQL Server</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/entityframework.png" alt="Entity Framework" class="skill-icon">
+            <p>Entity Framework</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/javascript.png" alt="JavaScript" class="skill-icon">
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/jquery.png" alt="jQuery" class="skill-icon">
+            <p>jQuery</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/ajax.png" alt="Ajax" class="skill-icon">
+            <p>Ajax</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/bootstrap.png" alt="Bootstrap" class="skill-icon">
+            <p>Bootstrap</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/git&github.png" alt="Bootstrap" class="skill-icon">
+            <p>Git&GitHub</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/typescript.png" alt="Bootstrap" class="skill-icon">
+            <p>TypeScript</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>ASP.NET Core, MVC</li>
-      <li>Angular, React</li>
-      <li>SQL Server, Entity Framework</li>
-      <li>RESTful APIs, Web Services</li>
-      <li>JavaScript, jQuery, Ajax</li>
-      <!-- Add more skills -->
-    </ul>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>If you'd like to discuss a project or collaborate, feel free to reach out.</p>
-    <form action="submit-form.php" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="6c4ba64c-2fed-4a2d-8556-7d44ee9f2440" />
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Md. Yousuf Mansur. All Rights Reserved.</p>
     <ul>
-      <li><a href="https://github.com/yousuf-mansur" target="_blank">
-          <img src="images/github-icon.png" alt="GitHub" style="width:30px;">
-        </a></li>
-      <li><a href="https://www.linkedin.com/in/yousuf-mansur" target="_blank">
-          <img src="images/linkedin-icon.png" alt="LinkedIn" style="width:30px;">
-        </a></li>
-      <!-- Add more social links -->
+      <li><a href="https://github.com/yousuf-mansur" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/yousuf-mansur" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </li>
     </ul>
   </footer>
-
 
   <script src="index.js"></script>
 </body>
